@@ -10,4 +10,11 @@ class Professeur extends Utilisateur
     {
         return count($this->eleves);
     }
+
+    public function ajoutEleve($eleve) {
+        if($eleve instanceof Eleve) {
+            array_push($this->eleves, $eleve);
+        }
+
+    }
 }
