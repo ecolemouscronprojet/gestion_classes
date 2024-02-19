@@ -2,14 +2,13 @@
 require_once('classes/professeur.php');
 
 
-$professeur1 = new Professeur();
-$professeur1->id = 1;
-$professeur1->nom = "Lassoie";
-$professeur1->prenom = "Samuel";
-$professeur1->date_de_naissance = new DateTime();
+$samuel = new Professeur('Lassoie', 'Samuel');
+$ahmed = new Professeur('Sbai', 'Ahmed');
+
 
 echo '<pre>';
-print_r($professeur1);
+print_r($samuel);
+print_r($ahmed);
 
 
-echo 'HELLLO';
+// echo 'HELLLO';
