@@ -1,14 +1,10 @@
 <?php
 require_once('classes/professeur.php');
+require_once('classes/eleve.php');
 
 
 $samuel = new Professeur('Lassoie', 'Samuel');
-$ahmed = new Professeur('Sbai', 'Ahmed');
+$eleve1 = new Eleve('TOTO', 'ROGER');
 
 
-echo '<pre>';
-print_r($samuel);
-print_r($ahmed);
-
-
-// echo 'HELLLO';
+echo $samuel->totalEleves() . ' élève(s)';
